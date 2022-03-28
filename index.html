@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Pokedex LaunchX</title>
+</head>
+<body>
+    <section class="conteiner">
+        <div class="pokedexConteiner">
+            <img src="./images/pokedexLeft.jpg" alt="Pokedex">
+            <div class="pokeName">
+                <input type="text" id="pokeName" name="pokeName" placeholder="ej. pikachu">
+            </div>
+            <div class="sendPokeName">
+                <button onclick="fetchPokemon()" id="sendNamePokemon"></button>
+            </div>
+            <div class="pokeImage">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" alt="pokemon" id="pokeImage">
+            </div>
+            <div class="Name">
+                <h3 id="Name" name="Name"></h3>
+            </div>
+        </div>
+        <div class="pokedexConteiner">
+            <img src="./images/pokedexRight.jpg" alt="Pokedex">
+            <div class="typePokemon">
+                <p id="typePokemon" name="typePokemon"></p>
+            </div>
+            <section class="stadConteiner">
+                <div class="stadistics"><h4 id="hp"></h4></div>
+                <div class="stadistics"><h4 id="atk"></h4></div>
+                <div class="stadistics"><h4 id="def"></h4></div>
+                <div class="stadistics"><h4 id="sp_atk"></h4></div>
+                <div class="stadistics"><h4 id="sp_def"></h4></div>
+                <div class="stadistics"><h4 id="speed"></h4></div>
+            </section>
+        </div>
+    </section>
+</body>
+<footer><script src="./pokedex.js"></script></footer>
+</html>
